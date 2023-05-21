@@ -10,3 +10,10 @@ userId.toFixed();
 //userId = "Inseok"  cannot be declared since it's a string
 //boolean
 var isLoggedIn = false;
+//isLoggedIn. //shows all the methods regarding boolean
+//any
+var hero;
+function getHero() {
+    return "thor";
+} //can add return type of function too
+hero = getHero(); //hero cannot have a boolean type as its value
