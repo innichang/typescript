@@ -5,7 +5,7 @@
 //   isActive: true
 // };
 Object.defineProperty(exports, "__esModule", { value: true });
-var myUser = {
+const myUser = {
     _id: "12345",
     name: "Inni",
     email: "inni@gmail.com",

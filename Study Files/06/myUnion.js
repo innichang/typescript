@@ -1,7 +1,8 @@
-var score = 33;
+"use strict";
+let score = 33;
 score = 44;
 score = "55";
-var inni = {
+let inni = {
     name: "Inni",
     id: 12345
 };
@@ -24,9 +25,9 @@ function getDatabaseId(id) {
     }
 }
 //Union Type applied to array
-var data = [1, 2, 3];
-var data2 = ["1", "2", "3"];
-var data3 = [1, "2", true, 4];
-var seatAllotment;
+const data = [1, 2, 3];
+const data2 = ["1", "2", "3"];
+const data3 = [1, "2", true, 4];
+let seatAllotment;
 seatAllotment = "aisle";
 // seatAllotment = "cabin"  //cannot be cabin

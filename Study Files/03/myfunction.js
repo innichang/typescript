@@ -10,10 +10,8 @@ function getUpper(val) {
     return val.toUpperCase();
 }
 function signUpUser(name, email, isPaid) { }
-var loginUser = function (name, email, isPaid) {
-    if (isPaid === void 0) { isPaid = false; }
-};
-var myValue = addTwo(5);
+const loginUser = (name, email, isPaid = false) => { };
+let myValue = addTwo(5);
 getUpper("Inseok");
 signUpUser("Inseok", "inni@gmail.com", false);
 loginUser("Inseok", "inni@gmail.com");
@@ -23,14 +21,14 @@ loginUser("Inseok", "inni@gmail.com");
 //   }
 //   return "200 OK"
 // }
-var getHello = function (s) {
+const getHello = (s) => {
     return "";
 };
-var heroes = ["thor", "spiderman", "ironman"];
+const heroes = ["thor", "spiderman", "ironman"];
 // const heroes = [1, 2, 3]
 //(hero): string declares the return value
-heroes.map(function (hero) {
-    return "hero is ".concat(hero);
+heroes.map((hero) => {
+    return `hero is ${hero}`;
 }); //in this case, we don't need to decalre the type of 'hero' because ts considers the input value
 //but return type needs to be declared
 // function consoleError(err:string): void{

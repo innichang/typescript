@@ -1,12 +1,15 @@
+"use strict";
 //creating a new user. email/userId/google login/ db id etc...
-var interInni = {
+const interInni = {
     dbId: 54321,
+    githubToken: "github",
     email: "inni@gmail.com",
     userId: 12345,
-    startTrial: function () {
+    role: "admin",
+    startTrial: () => {
         return "trial started";
     },
-    getCoupon: function (name, off) {
+    getCoupon: (name, off) => {
         return 10;
     }
 };

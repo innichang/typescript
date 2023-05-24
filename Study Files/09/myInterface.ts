@@ -10,14 +10,24 @@ interface interUser {
   getCoupon(couponname: string, value: number): number;
 }
 
-const interInni: interUser = {
+interface interUser {
+  githubToken: string;
+}
+
+interface interAdmin extends interUser {
+  role: "admin" | "ta" | "student";
+}
+
+const interInni: interAdmin = {
   dbId: 54321,
+  githubToken: "github",
   email: "inni@gmail.com",
   userId: 12345,
+  role: "admin",
   startTrial: () => {
     return "trial started";
   },
-  getCoupon: (name: "inni1995", off: 2) => {
+  getCoupon: (name: "inni1995", off: 10) => {
     return 10;
   }
 };
