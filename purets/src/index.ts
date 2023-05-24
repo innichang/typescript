@@ -65,5 +65,5 @@ class User {
   }
 }
 
-const inni = new User("inni@gmail.com", "inni");
+//const inni = new User("inni@gmail.com", "inni");
 //inni.city;
