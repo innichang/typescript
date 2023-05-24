@@ -12,7 +12,8 @@
 //instead of making a class like above you can also,
 
 class classUser {
-  private _courseCount = 1;
+  // private _courseCount = 1;
+  protected _courseCount = 1;
 
   readonly city: string = "Seoul";
   constructor(
@@ -40,9 +41,15 @@ class classUser {
   }
 }
 
+class SubUser extends classUser {
+  //acquires all the properties of classUser excluding properties that are mentioned as private
+  isFamily: boolean = true;
+  changeCourseCount() {
+    this._courseCount = 4;
+  }
+}
+
 const classInni = new classUser("inni@gmail.com", "inni");
 //classInni.name canot access name because name is private
 
 //classInni.deleteToken(); private property.... so this function is only accessible in the class
-
-console.log("here");

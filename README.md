@@ -129,14 +129,35 @@ type vs interface? what is the difference?
 
 'extends' keyword
 
+**WHY IS INTERFACE IMPORTANT?**
+<br>
+
 ## classes
 
 ## modifier key words
 
 ### public
+
 everything not marked is automatically marked as public
 
 <br>
 
-### priate
+### private
+
 when a variable is marked as private, it is only accessible within the class
+
+## Getters and Setters
+
+setters cannot have a return type
+
+get - used to get any property (public & private)
+
+any private properties can be exposed outside but with some additional logic/restrictions
+
+## Access modifiers
+
+protected - accessible only in the class and the classes that inherits the original class
+
+## inheritance
+
+Inheritance is used when you want to use a certain class as a parent class

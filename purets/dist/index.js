@@ -15,6 +15,7 @@ class classUser {
     ) {
         this.email = email;
         this.name = name;
+        // private _courseCount = 1;
         this._courseCount = 1;
         this.city = "Seoul";
     }
@@ -34,7 +35,16 @@ class classUser {
         this._courseCount = courseNum;
     }
 }
+class SubUser extends classUser {
+    constructor() {
+        super(...arguments);
+        //acquires all the properties of classUser excluding properties that are mentioned as private
+        this.isFamily = true;
+    }
+    changeCourseCount() {
+        this._courseCount = 4;
+    }
+}
 const classInni = new classUser("inni@gmail.com", "inni");
 //classInni.name canot access name because name is private
 //classInni.deleteToken(); private property.... so this function is only accessible in the class
-console.log("here");
