@@ -5,4 +5,4 @@ let user = {
 
 console.log("Inseok");
 console.log(user.name);
-console.log(user.email); //since no key named 'email' exists, it gets a red line
+//console.log(user.email); //since no key named 'email' exists, it gets a red line

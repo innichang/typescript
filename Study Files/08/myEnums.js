@@ -1,3 +1,4 @@
+"use strict";
 // const AISLE = 0
 // const MIDDLE = 1
 // const WINDOW = 2
@@ -10,5 +11,5 @@ var SeatChoice;
     SeatChoice[SeatChoice["WINDOW"] = 4] = "WINDOW";
     SeatChoice[SeatChoice["FOURTH"] = 5] = "FOURTH";
 })(SeatChoice || (SeatChoice = {}));
-var inniSeat = SeatChoice.AISLE;
+const inniSeat = SeatChoice.AISLE;
 //inside inniSeat, 'aisle' would be assigned

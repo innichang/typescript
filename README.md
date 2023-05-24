@@ -68,3 +68,75 @@ readonly
 
 & - can mix and match 2 different types and assign it to 1.
 (look myObjects.ts)
+
+## Array
+
+Can declare what type of array it is by defining a type before array brackets like
+string[], number[]
+Array<string>, Array<number>
+
+## Union Type
+
+In some cases where you are not sure what exact type a variable needs to take, union is used.
+
+**Try to keep it as strict as possible**
+
+can declare multiple types and bring it together. so sometimes can follow 1st type and sometimes can follow 2nd type depending on the case.
+
+if number | string, ts doesn't treat it as number or a string, it treats it as number AND string. so for example if, id: number | string, id.toUpperCase() gets an error.
+
+#Union Narrowing
+
+Can use if statement to narrow down what type a parameter is inside a function to use type specific methods.\
+
+What if I want a mix of string and number inside one array?
+
+_wrong answers_
+
+string | number [] ???<br>
+string[] | number [] ???
+
+_right answer_
+
+(string | number | boolean) []
+
+How can you allow some numbers to be very strict?
+
+let pi: 3.14 = 3.14
+pi: 3.145 //cannot be 3.145
+
+let str: "onlyThis" //can only be "onlyThis"
+
+## Tuples
+
+How about if you want specific things inside an array you want to push?
+
+order of array matters in a tuple
+
+but can use array methods and maybe push something into a tuple
+
+## Enums
+
+exists to restrict some choices in an offered value
+
+_WHY USE ENUMS?_
+
+can define functions, constants, variables
+
+## Interface
+
+type vs interface? what is the difference?
+
+'extends' keyword
+
+## classes
+
+## modifier key words
+
+### public
+everything not marked is automatically marked as public
+
+<br>
+
+### priate
+when a variable is marked as private, it is only accessible within the class
