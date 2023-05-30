@@ -129,7 +129,12 @@ type vs interface? what is the difference?
 
 'extends' keyword
 
+never involves the definition
+involved must have things
+
 **WHY IS INTERFACE IMPORTANT?**
+implements keyword
+
 <br>
 
 ## classes
@@ -161,3 +166,16 @@ protected - accessible only in the class and the classes that inherits the origi
 ## inheritance
 
 Inheritance is used when you want to use a certain class as a parent class
+
+## Abstract Classes
+
+<br>
+when abstract is declared, no new objects can be declared
+dbpassword
+but can create object using the class who is extending the class
+
+'super' keyword
+
+## Generics
+
+puts a comma to determin if <T> is just a HTML tag or not. <T,> : generics
