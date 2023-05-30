@@ -60,7 +60,6 @@ function getTrueShape(shape) {
     }
     //  return shape.side * shape.side; //since it can be circle or square
 }
-//exhaustive check
 function getArea(shape) {
     switch (shape.kind) {
         case "circle":
