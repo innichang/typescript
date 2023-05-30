@@ -129,7 +129,12 @@ type vs interface? what is the difference?
 
 'extends' keyword
 
+never involves the definition
+involved must have things
+
 **WHY IS INTERFACE IMPORTANT?**
+implements keyword
+
 <br>
 
 ## classes
@@ -161,3 +166,44 @@ protected - accessible only in the class and the classes that inherits the origi
 ## inheritance
 
 Inheritance is used when you want to use a certain class as a parent class
+
+## Abstract Classes
+
+<br>
+when abstract is declared, no new objects can be declared
+dbpassword
+but can create object using the class who is extending the class
+
+'super' keyword
+
+## Generics
+
+puts a comma to determin if <T> is just a HTML tag or not. <T,> : generics
+
+## Type Narrowing
+
+TypeScript overlays type analysis on JavaScript’s runtime control flow constructs like if/else, conditional ternaries, loops, truthiness checks, etc., which can all affect those types.
+
+This adds 'Type Guards' to the code.
+
+TypeScript follows the possible paths of the execution and analyzes the most specific type of a value at the given situation. This is Type Narrowing
+
+### instnceof narrowing
+
+### type predicate
+
+### Discriminated Unions
+
+    mentioning the name of interface inside the interface.
+
+    use
+    kind:
+    or
+    propertyFinder:
+    etc...
+
+### Exhaustive checking
+
+    why is exhaustive checking useful?
+
+    benefits?

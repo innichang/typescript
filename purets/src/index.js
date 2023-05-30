@@ -48,6 +48,7 @@ class SubUser extends classUser {
 const classInni = new classUser("inni@gmail.com", "inni");
 //classInni.name canot access name because name is private
 //classInni.deleteToken(); private property.... so this function is only accessible in the class
+<<<<<<< HEAD
 class User {
     constructor(email, name) {
         this.city = "Seoul";
@@ -56,5 +57,17 @@ class User {
         this.city;
     }
 }
+=======
+// class User {
+//   email: string;
+//   name: string;
+//   readonly city: string = "Seoul";
+//   constructor(email: string, name: string) {
+//     this.email = email;
+//     this.name = name;
+//     this.city;
+//   }
+// }
+>>>>>>> ebd3b20 (day 6)
 //const inni = new User("inni@gmail.com", "inni");
 //inni.city;
